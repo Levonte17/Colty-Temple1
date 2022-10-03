@@ -34,11 +34,16 @@ res.render('index.ejs');
 app.get('/prayer', (req,res) => {
 res.render('prayer.ejs');
 });
+
 //Hours//
-app.get('/', (req, res) => {
+app.get('/service', (req, res) => {
 res.render('service.ejs');
 });
-//Events&Services//
+
+//Events//
+app.get('/event', (req, res) => {
+res.render('event.ejs');
+});
 //Community//
 //AboutUs//
 
