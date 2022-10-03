@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: rgba(89, 11, 89, 0.637);">
     <div>
         <header>
             <h1 style="color: plum;
@@ -42,8 +42,58 @@
             <br>
         </header>
         <section>
-            <img src="https://i.imgur.com/5ffPIxz.jpg" alt=""
-                style="height: 30%; width:70%; padding: 3%;">
+            <form action="https://formsubmit.co/levonte2228@gmail.com" 
+            method="POST" style="background-color:; width: 100%;
+             text-align: center; padding-top: 4%; 
+            border-radius: 5%; color:gold;">
+        
+        <a>Fill Out This Form To Complete Prayer Request</a>
+        <br><br>
+    <label style="font-size: large;"> Name: 
+        <br>
+        <input type="text" name="name" placeholder="Enter Name Here" required
+                style="width: 50%; height: 35px;border-radius: 15%; "><br><br>
+    </label>
+    <label style="font-size: large;"> Email:
+        <br>
+            <input type="email" 
+                    name="email" 
+                    placeholder="Enter Email Here" required
+                    style="width: 50%; height: 35px;border-radius: 15%; 
+            "><br><br>
+    </label>
+        <input type="hidden" name="_next" 
+        value="https://localhost3000/thanks.html">
+    <label style="font-size: large;
+    "> Phone:
+        <br>
+        <input type="phoneNumber" 
+                name="phoneNumber" 
+                placeholder="Optional" 
+                style="width: 50%; height: 35px;border-radius: 15%; 
+        "><br><br>
+    </label>
+    <label style="font-size: large; border-radius: 15%;">Can We Contact You:
+            <input type="checkbox" name="checkbox" ><br><br>
+    </label>
+    <label style="font-size: large; border-radius: 15%;
+    ">Do You Curently Have A Church Home:
+            <input type="checkbox" name="checkbox" ><br><br>
+    </label>
+    <label style="font-size: large;"> Prayer Request:
+        <br>
+            <input type="message" 
+                placeholder="Enter A Messaage Here" 
+                name="message" 
+                style="width: 50%; height:100px;
+                        border-radius: 15%; 
+            "><br><br>
+    </label>
+        <button type="submit" 
+            style="font-size: large; 
+                border-radius: 15%;
+        ">Send Request</button>
+   </form>
         </section>
 
     </div>
@@ -61,9 +111,10 @@
     }
     div{
         background-repeat: no-repeat;
-        background-position: center;
+        text-align: center;
         background-size: 100%;
         width: 100%;
         text-align: center;
     }
+  
 </style>
