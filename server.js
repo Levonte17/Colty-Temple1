@@ -31,6 +31,9 @@ res.render('index.ejs');
 });
 
 //PayerRequest//
+app.get('/prayer', (req,res) => {
+res.render('prayer.ejs');
+});
 //Events&Services//
 //Community//
 //AboutUs//
