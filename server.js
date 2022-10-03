@@ -34,6 +34,10 @@ res.render('index.ejs');
 app.get('/prayer', (req,res) => {
 res.render('prayer.ejs');
 });
+//Hours//
+app.get('/', (req, res) => {
+res.render('service.ejs');
+});
 //Events&Services//
 //Community//
 //AboutUs//
