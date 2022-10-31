@@ -1,14 +1,14 @@
 //DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
-//const methodOverride = require('method-override');
+const methodOverride = require('method-override');
 
 //INIT
 const app = express();
 
 //CONFIG
 require('dotenv').config();
-const PORT = process.env.PORT
+const PORT = process.env.PORT;
 const DATABASE_URI = process.env.DATABASE_URI;
 const db = mongoose.connection;
 
@@ -19,8 +19,8 @@ mongoose.connect(DATABASE_URI);
 db.on('connected', () => console.log('MongoDB Connected'));
 
 //MIDDLEWARE
-app.use(express.urlencoded({extended: false}));
-//app.use(methodOverride('_method'));
+app.use(express.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 
 //TODU
 ////INDUCES////
