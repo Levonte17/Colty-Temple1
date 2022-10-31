@@ -44,8 +44,15 @@ res.render('service.ejs');
 app.get('/event', (req, res) => {
 res.render('event.ejs');
 });
+
 //Community//
-//AboutUs//
+app.get('/community', (req, res) => {
+res.render('community.ejs');
+});
+//Contact//
+app.get('/Contact', (req, res) => {
+res.render('contact.ejs');
+});
 
 
 
