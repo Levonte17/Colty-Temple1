@@ -1,7 +1,7 @@
 //DEPENDENCIES
 const express = require('express');
 const mongoose = require('mongoose');
-const methodOverride = require('method-override');
+//const methodOverride = require('method-override');
 
 //INIT
 const app = express();
@@ -20,7 +20,7 @@ db.on('connected', () => console.log('MongoDB Connected'));
 
 //MIDDLEWARE
 app.use(express.urlencoded({ extended: false }));
-app.use(methodOverride('_method'));
+//app.use(methodOverride('_method'));
 
 //TODU
 ////INDUCES////
